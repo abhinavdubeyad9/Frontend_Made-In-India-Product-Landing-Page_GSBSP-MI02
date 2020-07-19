@@ -67,8 +67,15 @@ header.sticky .logo,
 header.sticky ul li a{
 	color: #000;
 }
-@media (min-width){
-
+@media (max-width:600px){
+	header ul li a{
+		margin: 0 5px;
+		letter-spacing: 1px;
+	}
+	header{
+		display: flex;
+		flex-direction: column;
+	}
 }
 .row{
 	margin-left: 0!important;
