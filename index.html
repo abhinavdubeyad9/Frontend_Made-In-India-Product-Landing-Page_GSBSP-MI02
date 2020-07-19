@@ -7,11 +7,18 @@
     <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'> 
   <!-- bootstap  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
+
+  <!-- animate css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
     <!-- custom css -->
     <link rel="stylesheet" href="./CSS/styles.css">
     
@@ -19,84 +26,83 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/script.js"></script>
-  
-</head>
+
+ </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-style p-3">
-    <a class="navbar-brand pl-5" href="#">Made In India</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto pl-5">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#aboutid">About</a>
-        </li>
-      <li class="nav-item">
-          <a class="nav-link" href="#productid">Products</a>
-        </li>
-      </ul>
+  <header class="topnav" id="myTopnav">
+    <a href="#" class="logo"><img src="images/mainlogo.png" width="120" height="50"></a>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#aboutid">About</a></li>
+      <li><a href="#productid">Products</a></li>
+      <li><a href="#substitue">Substitues</a></li>
+    </ul>
+  </header>
+
+  <div class="banner-area">
+    <div class="animate__animated animate__fadeOutTopRight animate__delay-0.5s"><img src="images/rocket.png" alt=""></div>
+    <div class="banner-text">
+       <div class="animate__animated animate__fadeInLeft animate__delay-0.5s">
+         <h2 >Made In India </h2>
+         <span class="chakr-rotate"> 
+          <img src="images/ashok.png" width="250" height="250">
+        </span>
+         <!-- <a href="#">Learn More</a> -->
+        </div>
     </div>
-  </nav>
+  </div>
+
+    <!-- ======= About Section ======= -->
+    <section id="aboutid" class="about">
+      <div class="container">
+        <div class="section_header text-center mb-5 mt-4">
+          <h1>About</h1> 
+        </div>
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="about-img">
+              <img src="images/make_in_india.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <p><strong>Made In India</strong> was launched by the Government of India on 25 September 2014 to encourage companies to manufacture their products in India and incentivize with dedicated investments into manufacturing.The policy approach was to create a conducive environment for investments, develop modern and efficient infrastructure, and open up new sectors for foreign capital. The initiative targeted 25 economic sectors for job creation and skill enhancement and aimed "to transform India into a global design and manufacturing hub"</p>
+            <button type="button" class="btn button-style" data-toggle="collapse" data-target="#demo">Read More</button>
+            <div id="demo" class="collapse">
+              <p>After the launch, India gave investment commitments worth ₹16.40 lakh crore (US$230 billion) and investment inquiries worth of ₹1.5 lakh crore (US$21 billion) between September 2014 to February 2016. As a result, India emerged as the top destination globally in 2015 for foreign direct investment (FDI), surpassing the United States and China, with US$60.1 billion FDI. As per the current policy, 100% Foreign Direct Investment (FDI) is permitted in all 100 sectors, except for Space industry (74%), defence industry (49%) and Media of India (26%). Japan and India had also announced a US$12 billion "Japan-India Make-in-India Special Finance Facility" fund to push investment.</p>
+            </div>     
+      
+            
+		
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
   
 
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-          <img src="./images/make_in_india.png" class="d-block w-100" alt="...">
-      </div>
-      <!-- <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
-    -->
-  </div>
-  </div>
 
-  <!-- About section  -->
-<div class="'container-fluid sub_section pt-5 pb-5 parallax" id="aboutid">
-	<div class="section_header text-center mb-5 mt-4">
-		<h1>About</h1> 
-	</div>
-	<div class="row pt-5">
-		<div class="col-lg-5 col-md-6 col-12 ml-5 about_res">
-			<img src="./images/logo.png" class="img-fluid" width="350" height="100">
-		</div>		
-		<div class="col-lg-6 col-md-6 col-12">
-			<p><strong>Made In India</strong> was launched by the Government of India on 25 September 2014 to encourage companies to manufacture their products in India and incentivize with dedicated investments into manufacturing.The policy approach was to create a conducive environment for investments, develop modern and efficient infrastructure, and open up new sectors for foreign capital. The initiative targeted 25 economic sectors for job creation and skill enhancement and aimed "to transform India into a global design and manufacturing hub"</p>
-			<p>After the launch, India gave investment commitments worth ₹16.40 lakh crore (US$230 billion) and investment inquiries worth of ₹1.5 lakh crore (US$21 billion) between September 2014 to February 2016. As a result, India emerged as the top destination globally in 2015 for foreign direct investment (FDI), surpassing the United States and China, with US$60.1 billion FDI. As per the current policy, 100% Foreign Direct Investment (FDI) is permitted in all 100 sectors, except for Space industry (74%), defence industry (49%) and Media of India (26%). Japan and India had also announced a US$12 billion "Japan-India Make-in-India Special Finance Facility" fund to push investment.</p>
-		
-		</div>
-	</div>
-</div>
-
-<br>
 
                          <!-- ###product section### -->
-<section id="productid">                         
-<h1 class="text-center">Made In India Products</h1>
+<section class="parallax" id="productid">  
+  <div class="container">                       
+<h1 class="text-center pt-4 pb-4">Made In India Products</h1>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img  src="images/santoor.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Santoor</h4></img>
+              <img  src="images/santoor.jpg" class="bd-placeholder-img card-img-top" width="50%" height="225" ><h4 class="text-center">Santoor</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Santoor offers a range of beauty soaps that contains natural ingredients found in India such as sandal and turmeric.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img  src="images/vi-john.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Vi-john</h4></img>
+              <img  src="images/vi-john.jpg" class="bd-placeholder-img card-img-top" width="10%" height="225" ><h4 class="text-center">Vi-john</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">VI-JOHN GROUP has emerged today as manufacturers of the best internationally known shaving cream.</p>
               </div>
             </div>
           </div>
@@ -104,7 +110,7 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/titan.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Titan</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Titan Company Limited is an Indian consumer goods company that mainly manufactures watches</p>
               </div>
             </div>
           </div>
@@ -116,7 +122,7 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/volini.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Volini</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Volini is a modern day pain reliever, scientifically formulated for effective pain relief.</p>
               </div>
             </div>
           </div>
@@ -124,7 +130,7 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/jio.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Jio</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Jio managed to grab eyeballs with its spectacular offers The company created a new trend by offering internet at low cost.</p>
               </div>
             </div>
           </div>
@@ -132,7 +138,7 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/bisleri.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">bisleri</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Bisleri International is an Indian brand bottled water formed in 1969 by Jayantilal Chauhan and Felice Bisleri. Bisleri</p>
               </div>
             </div>
           </div>
@@ -145,7 +151,7 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/bombay.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Bombay diynig</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Bombay Dyeing is the flagship company of the Wadia Group, engaged primarily in the business of Textiles.</p>
               </div>
             </div>
           </div>
@@ -153,15 +159,15 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/cello.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">cello</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Cello Pens is India's most recognized stationery brand and the leading manufacturer of writing instruments.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img  src="images/chavan.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Chavan Prass</h4></img>
+              <img  src="images/chavan.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Chyawanprash</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Chyawanprash consists of Amla pulp as a base, and this is considered to be the most effective Rasayana </p>
               </div>
             </div>
           </div>
@@ -169,25 +175,25 @@
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
 
   <br>
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img  src="images/parle.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Parle-G</h4></img>
+              <img  src="images/parle.jpg" class="bd-placeholder-img card-img-top" width="50%" height="225" ><h4 class="text-center">Parle-G</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Parle-G is a brand of biscuits manufactured by Parle Products in India.It is the most liked biscuit by Indians</p>
               </div>
             </div>
           </div>
@@ -195,7 +201,7 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/nirma.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Nirma</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Nirma is a group of companies based in the city of Ahmedabad in western India that manufactures soaps & detergents</p>
               </div>
             </div>
           </div>
@@ -203,7 +209,7 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/vicco.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Vicco</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Vicco Turmeric skin cream vanishes into your skin & its active ingredients like turmeric and sandalwood oil.</p>
               </div>
             </div>
           </div>
@@ -213,9 +219,9 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img  src="images/amul.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">ammul</h4></img>
+              <img  src="images/amul.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Amul</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Utterly delicious ice cream made form fresh milk available in a wide range of flavours and packs.</p>
               </div>
             </div>
           </div>
@@ -223,7 +229,7 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/boro plus.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Boro Plus</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Boro Plus Antiseptic Cream: Contains extracts of Aloe Vera, Neem, Basil, Turmeric, Sandalwood.</p>
               </div>
             </div>
           </div>
@@ -231,7 +237,7 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/godrej.png" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Godrej battery</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Godrej battery is pre charged battery and retain power for over one year when not in use.</p>
               </div>
             </div>
           </div>
@@ -242,9 +248,9 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img  src="images/action.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Action</h4></img>
+              <img  src="images/action.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Action Shoes</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Action is synonymous with quality footwear for the whole family-ranging from casuals to formals from daily wear to sports wear</p>
               </div>
             </div>
           </div>
@@ -252,7 +258,7 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/neha.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Neha Mehndi</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Neha Herbal Mehandi gives your hair a natural tone and fortifies it. Your hair feels nourished and is left with an incredible shade.</p>
               </div>
             </div>
           </div>
@@ -260,28 +266,76 @@
             <div class="card mb-4 shadow-sm">
               <img  src="images/real-fruit.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" ><h4 class="text-center">Godrej battery</h4></img>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Real Fruit Power has a range of 14 exciting variants in the fruit juices category.The are the preferable once in the market</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+  </div>
+
+  </div>
+</section>
+
+<!-- #### substitues #### -->
+<section class="Substitues" id="substitueid">
+ <div class="container pt-4 pb-4">
+   <h1 class="text-center pb-3">Foreign product substitues</h1>
+   <p>Firstly, here is a list of Made in India brands arranged in different categories. Both foreign and Indian brands offer quality products. Most importantly, some of the Indian products use herbal/ayurvedic ingredients. For instance, Patanjali Dant Kanti. So, those are beneficial for health. Also, local products are usually less expensive compared to foreign products.</p>
+    
+   <h2>Soap</h2>
+   <img src="images/soap.jpeg" class="img-fluid pt-3 pb-3" alt="">
+   <p>There are foreign brands like Liril, Pears, Lifebuoy, which are not Indian brands. There are many India Brands which makes herbal soaps as well. The list is as follow.
+    <br>
+    <strong>Medimix, Santoor, No. 1, Cinthol, Margo, Himalaya, Patanjali Soaps, Mysore, Nirma</strong>
+  </p>
+
+  <h2>Battery</h2>
+   <img src="images/battery.jpeg" class="img-fluid pt-3 pb-3" alt="">
+   <p>We have brands like Eveready and Duracell of batteries. The Indian brands are as follow
+     <br>
+   <strong>Nippo, Godrej GP</strong>
+  </p>
+
+  <h2>Automobiles</h2>
+   <img src="images/automobiles.png" class="img-fluid pt-3 pb-3" width="500px" height="350px" alt="">
+   <p>The profit from the Auto industry plays a significant role in India’s GDP. Indian market is filled with various Indian as well as foreign brands.<strong> Tata, Bajaj, Mahindra, Hero, TVS</strong> and more are Indian Automobiles Giant. Some of the parts are imported from overseas, but manufacturing is mainly done in India. In conclusion, Indian Automobiles helps to grow the economy.
+     <br>
+  </p>
+
+  <h2>Soft Drinks</h2>
+   <img src="images/softdrinks.jpeg" class="img-fluid pt-3 pb-3" alt="">
+   <p>Brands like Pepsi and Coke are foreign-based. Most of the cold drinks we consume are foreign brands, but We have India Alternatives For Foreign Products <strong>Frooti, Maaza, Paper Boat and Real</strong>. So, these soft drinks brands are good for Vocal for Local.
+     <br>
+ 
+  </p>
+  <h2>Toothpaste</h2>
+   <img src="images/toothpaste.jpeg" class="img-fluid pt-3 pb-3" alt="">
+   <p>Brands like Pepsodent, Oral-B, Colgate. Sensodyne are some foreign toothpaste brands. There are several Indian brands <strong>Patanjali Dant Kanti, Dabur Red, Babool, Amar, Meswak </strong>uses Aayurvedik ingredients and comparatively less expensive. So, using such products is beneficial.
+     <br>
+
+  </p>
+
   </div>
 </section>
 
   <footer class="page-footer font-small blue">
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a class="link" href="https://github.com/abhinavdubeyad9"> Abhinav Dubey</a>
+    <i class="fa fa-github"><a class="link" href="https://github.com/abhinavdubeyad9"> Abhinav Dubey</a></i>
   </div>
 </footer>
+
+<script type="text/javascript">
+
+</script>
 </body>
 </html>
